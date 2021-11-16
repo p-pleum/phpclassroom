@@ -12,7 +12,7 @@
          echo "<td>คอลัมน์ที่ 4</td>";
          echo "<td>คอลัมน์ที่ 5</td>";
          echo "<td>คอลัมน์ที่ 6</td>";
-         echo "<tr>";
+         echo "</tr>";
     ?>
     </table>
   </body>
