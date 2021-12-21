@@ -6,7 +6,7 @@
   echo "<table border='1'>";
   echo "<colgroup span=”9” width=”100”</colgroup>";
   echo "<tr><td><b>ลำดับ</b></td>
-  <td bgcolor="CCFFCC"><b>จังหวัด</b></td>
+  <td><b>จังหวัด</b></td>
   <td><b>ผู้ป่วยใหม่</b></td>
   <td><b>ผู้ป่วยรวม</b></td>
   <td><b>ผู้ป่วยใหม่ในประเทศ</b></td>
