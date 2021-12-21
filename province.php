@@ -27,6 +27,10 @@
     echo "<td>";
     echo $total_case->province;
     echo "</td>";
+    echo "<td>";
+    echo $new_case_excludeabroad->province;
+    echo "</td>";
+    
     
     echo "</tr>";
   }
