@@ -4,7 +4,7 @@
   $data = json_decode($json);
   
   echo "<center><table border='1'>";
-  echo '<body style="background-color:aliceblue">';
+  echo '<body style="background-color:tan">';
   echo "<tr><td>ลำดับ</td>
   <td>จังหวัด</td>
   <td>ผู้ป่วยใหม่</td>
@@ -14,13 +14,16 @@
   <td>ผู้เสียชีวิตใหม่</td>
   <td>ผู้เสียชีวิตรวม</td>
   <td>วันที่อัพเดท</td></tr>";
-  foreach($data as $key=>$val){
+  foreach($data as $key=>$val=>$new_case){
     echo "<tr>";
     echo "<td>";
     echo ($key+1);
     echo "</td>";
     echo "<td>";
     echo $val->province;
+    echo "</td>";
+      echo "<td>";
+    echo $new_case->province;
     echo "</td>";
     echo "</tr>";
   }
