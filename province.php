@@ -1,9 +1,9 @@
 <?php
-echo "<center><b>ตางรางรายงานสถานการณ์โควิด-19</b></center><br>";
 
   $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces");
   $data = json_decode($json);
-   
+     echo "<h1 align = 'center'>รายงานสถานการโควิด-19 แยกจังหวัด</h1><br>";
+  echo "<table border='1' align = 'center' bgcolor ='aliceblue'>";
   echo "<center><table border='1'>";
  echo "<colgroup span=”9” width=”100”</colgroup>";
   echo '<body style="background-color:tan">';
