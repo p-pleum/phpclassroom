@@ -22,7 +22,6 @@
     echo "<td>";
     echo $val->province;
     echo "</td>";
-  
     echo "</tr>";
   }
   echo "</center></table>"; 
