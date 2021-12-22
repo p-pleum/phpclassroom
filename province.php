@@ -22,27 +22,6 @@
     echo "<td>";
     echo $val->province;
     echo "</td>";
-    echo "<td>";
-    echo $new_case->province;
-    echo "</td>";
-    echo "<td>";
-    echo $total_case->province;
-    echo "</td>";
-    echo "<td>";
-    echo $new_case_excludeabroad->province;
-    echo "</td>";
-    echo "<td>";
-    echo $total_case_excludeabroad->province;
-    echo "</td>";
-    echo "<td>";
-    echo $new_death->province;
-    echo "</td>";
-    echo "<td>";
-    echo $total_death->province;
-    echo "</td>";
-    echo "<td>";
-    echo $update_date->province;
-    echo "</td>";
     
     echo "</tr>";
   }
