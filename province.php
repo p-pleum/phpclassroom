@@ -4,7 +4,6 @@
   $data = json_decode($json);
    
 echo "<center><b>ตางรางรายงานสถานการณ์โควิด-19</b></center>""<br><br>";
-echo "<center><b>วันที่อัพเดต</b></center>""<br>";
   echo "<center><table border='1'>";
  echo "<colgroup span=”9” width=”100”</colgroup>";
   echo '<body style="background-color:tan">';
@@ -41,9 +40,6 @@ echo "<center><b>วันที่อัพเดต</b></center>""<br>";
     echo "</td>";
     echo "<td>";
     echo $total_death->province;
-    echo "</td>";
-    echo "<td>";
-    echo $update_date->province;
     echo "</td>";
     echo "</tr>";
   }
