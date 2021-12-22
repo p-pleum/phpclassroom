@@ -5,7 +5,7 @@
      echo "<br><h2 align = 'center'>รายงานสถานการโควิด-19 แยกจังหวัด</h2><br>";
   
   echo "<center><table border='1' bgcolor ='mistyrose'>";
- echo "<colgroup span=”9” width=”130”</colgroup>";
+ echo "<colgroup span=”9” width=”250”</colgroup>";
   echo '<body style="background-color:lavender">';
   echo "<tr bgcolor ='peachpuff'><td><b>ลำดับ</b></td>
   <td><b>จังหวัด</b></td>
@@ -46,5 +46,5 @@ echo "<td>";
     echo "</tr>";
   }
   echo "<center></table><br>"; 
-echo "<center><h3><b>วันที่อัพเดต : ".$data[0]->update_date."</b></h3></center><br>";
+echo "<center><h3><b>วันที่อัพเดต : ".$data[0]->txn_date."</b></h3></center><br>";
 ?>
