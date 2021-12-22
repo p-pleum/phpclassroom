@@ -14,7 +14,7 @@
   <td>ผู้เสียชีวิตใหม่</td>
   <td>ผู้เสียชีวิตรวม</td>
   <td>วันที่อัพเดท</td></tr>";
-  foreach($data as $key=>$val=>$new_case){
+  foreach($data as $key=>$val){
     echo "<tr>";
     echo "<td>";
     echo ($key+1);
