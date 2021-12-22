@@ -1,5 +1,5 @@
 <?php
-echo "<center><b>ตางรางรายงานสถานการณ์โควิด-19</b></center>""<br><br>";
+echo "<center><b>ตางรางรายงานสถานการณ์โควิด-19</b></center><br>";
 
   $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces");
   $data = json_decode($json);
