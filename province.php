@@ -2,10 +2,10 @@
 
   $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces");
   $data = json_decode($json);
-     echo "<h2 align = 'center'>รายงานสถานการโควิด-19 แยกจังหวัด</h2><br>";
+     echo "<br><h2 align = 'center'>รายงานสถานการโควิด-19 แยกจังหวัด</h2><br>";
   
   echo "<center><table border='1' bgcolor ='mistyrose'>";
- echo "<colgroup span=”9” width=”110”</colgroup>";
+ echo "<colgroup span=”9” width=”130”</colgroup>";
   echo '<body style="background-color:lavender">';
   echo "<tr bgcolor ='peachpuff'><td><b>ลำดับ</b></td>
   <td><b>จังหวัด</b></td>
@@ -46,5 +46,5 @@ echo "<td>";
     echo "</tr>";
   }
   echo "<center></table><br>"; 
-echo "<center></h3>วันที่อัพเดต : ".$data[0]->update_date."</h3></center><br>";
+echo "<center><h3><b>วันที่อัพเดต : ".$data[0]->update_date."</b></h3></center><br>";
 ?>
