@@ -22,8 +22,8 @@
     echo "<td>";
     echo $val->province;
     echo "</td>";
-      echo "<td>";
-    echo $new_case->province;
+    echo "<td>";
+    echo $new_case;
     echo "</td>";
     echo "</tr>";
   }
