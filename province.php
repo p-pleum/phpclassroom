@@ -18,7 +18,7 @@
   </tr>";
   foreach($data as $key=>$val){
     echo "<tr>";
-    echo "<td>";
+    echo "<td bgcolor ='peachpuff'>";
     echo ($key+1);
     echo "</td>";
     echo "<td>";
