@@ -22,9 +22,6 @@
     echo "<td>";
     echo $val->province;
     echo "</td>";
-    echo "<td>";
-    echo $new_case;
-    echo "</td>";
     echo "</tr>";
   }
   echo "<center></table>"; 
