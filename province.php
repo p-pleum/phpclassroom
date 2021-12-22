@@ -22,10 +22,7 @@
     echo "<td>";
     echo $val->province;
     echo "</td>";
-        echo "<td>";
-    echo $new_case->province;
-    echo "</td>";
-
+  
     echo "</tr>";
   }
   echo "</center></table>"; 
