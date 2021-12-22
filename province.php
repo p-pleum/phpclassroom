@@ -7,7 +7,7 @@
   echo "<center><table border='1' bgcolor ='mistyrose'>";
  echo "<colgroup span=”9” width=”110”</colgroup>";
   echo '<body style="background-color:lavender">';
-  echo "<tr bgcolor ='azure'><td><b>ลำดับ</b></td>
+  echo "<tr bgcolor ='peachpuff'><td><b>ลำดับ</b></td>
   <td><b>จังหวัด</b></td>
   <td><b>ผู้ป่วยใหม่</b></td>
   <td><b>ผู้ป่วยรวม</b></td>
