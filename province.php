@@ -4,9 +4,9 @@
   $data = json_decode($json);
      echo "<br><h2 align = 'center'>รายงานสถานการโควิด-19 แยกจังหวัด</h2><br>";
   
-  echo "<center><table border='1'  bgcolor ='mistyrose'>";
+  echo "<center><table border='1'  bgcolor ='ivory'>";
  echo "<colgroup  width=”90%”</colgroup>";
-  echo '<body style="background-color:lavender">';
+  echo '<body style="background-color:mintcream">';
   echo "<tr bgcolor ='peachpuff'><td><b>ลำดับ</b></td>
   <td><b>จังหวัด</b></td>
   <td><b>ผู้ป่วยใหม่</b></td>
