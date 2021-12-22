@@ -24,23 +24,25 @@ echo "<center><b>ตางรางรายงานสถานการณ์
     echo "<td>";
     echo $val->province;
     echo "</td>";
-  echo $new_case->province;
+echo "<td>";
+    echo $val->new_case;
     echo "</td>";
     echo "<td>";
-    echo $total_case->province;
+    echo $val->total_case;
     echo "</td>";
     echo "<td>";
-    echo $new_case_excludeabroad->province;
+    echo $val->new_case_excludeabroad;
     echo "</td>";
     echo "<td>";
-    echo $total_case_excludeabroad->province;
+    echo $val->total_case_excludeabroad;
     echo "</td>";
     echo "<td>";
-    echo $new_death->province;
+    echo $val->new_death;
     echo "</td>";
     echo "<td>";
-    echo $total_death->province;
+    echo $val->total_death;
     echo "</td>";
+   
     echo "</tr>";
   }
   echo "<center></table>"; 
