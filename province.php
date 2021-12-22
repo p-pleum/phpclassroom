@@ -4,7 +4,7 @@
   $data = json_decode($json);
   
   echo "<center><table border='1'></center>";
-  echo "<colgroup span=”9” width=”100”</colgroup>";
+  
   echo "<tr><td><b>ลำดับ</b></td>
   <td><b>จังหวัด</b></td>
   <td><b>ผู้ป่วยใหม่</b></td>
