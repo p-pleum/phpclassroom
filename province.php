@@ -1,30 +1,19 @@
 <?php
 
-  $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces");
+  $json = file_get_contents("url");
   $data = json_decode($json);
   
-  echo "<center><table border='1'></center>";
-  
-  echo "<tr><td><b>ลำดับ</b></td>
-  <td><b>จังหวัด</b></td>
-  <td><b>ผู้ป่วยใหม่</b></td>
-  <td><b>ผู้ป่วยรวม</b></td>
-  <td><b>ผู้ป่วยใหม่ในประเทศ</b></td>
-  <td><b>ผู้ป่วยรวมในประเทศ</b></td>
-  <td><b>ผู้เสียชีวิตใหม่</b></td>
-  <td><b>ผู้เสียชีวิตรวม</b></td>
-  <td><b>วันที่อัพเดท</b></td></tr>";
-  foreach($data as $key=>$val=>$new_case=>$total_case=>$new_case_excludeabroad=>$total_case_excludeabroad=>$new_death=>$total_death=>$update_date){
+  echo "<table border='1'>";
+  echo "<tr><td>ลำดับ</td><td>จังหวัด</td></tr>";
+  foreach($data as $key=>$val){
     echo "<tr>";
     echo "<td>";
-    echo ($key+1);
+    echo $key;
     echo "</td>";
     echo "<td>";
     echo $val->province;
     echo "</td>";
-    
     echo "</tr>";
   }
   echo "</table>"; 
 ?>
-
