@@ -7,14 +7,14 @@
   echo "<center><table border='1'  bgcolor ='ivory'>";
  echo "<colgroup  width=”90%”</colgroup>";
   echo '<body style="background-color:mintcream">';
-  echo "<tr bgcolor ='peachpuff'><td rowspan='2'><b>ลำดับ</b></td>
-  <td rowspan='2'><b>จังหวัด</b></td>
-  <td rowspan='2'><b>ผู้ป่วยใหม่</b></td>
-  <td rowspan='2'><b>ผู้ป่วยรวม</b></td>
-  <td rowspan='2'><b>ผู้ป่วยใหม่ในประเทศ</b></td>
-  <td rowspan='2'><b>ผู้ป่วยรวมในประเทศ</b></td>
-  <td rowspan='2'><b>ผู้เสียชีวิตใหม่</b></td>
-  <td rowspan='2'><b>ผู้เสียชีวิตรวม</b></td>
+  echo "<tr bgcolor ='peachpuff'><td><b>ลำดับ</b></td>
+  <td><b>จังหวัด</b></td>
+  <td><b>ผู้ป่วยใหม่</b></td>
+  <td><b>ผู้ป่วยรวม</b></td>
+  <td><b>ผู้ป่วยใหม่ในประเทศ</b></td>
+  <td><b>ผู้ป่วยรวมในประเทศ</b></td>
+  <td><b>ผู้เสียชีวิตใหม่</b></td>
+  <td><b>ผู้เสียชีวิตรวม</b></td>
   </tr>";
   foreach($data as $key=>$val){
     echo "<tr>";
