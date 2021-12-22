@@ -14,10 +14,10 @@
   <td><b>ผู้เสียชีวิตใหม่</b></td>
   <td><b>ผู้เสียชีวิตรวม</b></td>
   <td><b>วันที่อัพเดท</b></td></tr>";
-  foreach($data as $key=>$val){
+   foreach($data as $key=>$val=>$new_case=>$total_case=>$new_case_excludeabroad=>$total_case_excludeabroad=>$new_death=>$total_death=>$update_date){
     echo "<tr>";
     echo "<td>";
-    echo $key;
+    echo ($key+1);
     echo "</td>";
     echo "<td>";
     echo $val->province;
