@@ -5,7 +5,7 @@
      echo "<br><h2 align = 'center'>รายงานสถานการโควิด-19 แยกจังหวัด</h2><br>";
   
   echo "<center><table border='1'  bgcolor ='mistyrose'>";
- echo "<colgroup  width=”70%”</colgroup>";
+ echo "<colgroup  width=”90%”</colgroup>";
   echo '<body style="background-color:lavender">';
   echo "<tr bgcolor ='peachpuff'><td><b>ลำดับ</b></td>
   <td><b>จังหวัด</b></td>
