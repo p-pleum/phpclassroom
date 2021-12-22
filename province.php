@@ -3,7 +3,7 @@
   $json = file_get_contents("url");
   $data = json_decode($json);
   
-  echo "<table border='1'>";
+  echo "<center><table border='1'></center>";
   echo "<tr><td>ลำดับ</td><td>จังหวัด</td></tr>";
   foreach($data as $key=>$val){
     echo "<tr>";
