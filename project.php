@@ -150,7 +150,7 @@ echo "<td>";
     echo $val->new_case;
     echo "</td>";
     echo "<td>";
-    echo $val->new_recovered;
+    echo $val->new_case_excludeabroad;
     echo "</td>";
     echo "<td>";
     echo $val->total_case_excludeabroad;
