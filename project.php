@@ -57,7 +57,7 @@
             <div class="card-body">
               <h5 class="card-title">จัดทำโดย</h5>
               <p class="card-text">นางสาวปวริศา สีตะระโส </p>
-              <p class="card-text"><small class="text-muted">ม.6/13 เลขที่ 20 , 88888</small></p>
+              <p class="card-text"><small class="text-muted">ม.6/13 เลขที่ 20 , 55803</small></p>
             </div>
           </div>
         </div>
@@ -134,7 +134,8 @@
           </tr>
           <!-- แก้ไขส่วนที่ 3 -->
           <!-- Loop -->
-          <?php   foreach($data as $key=>$val){
+          <?php   
+          foreach($data as $key=>$val){
      echo "<tr>";
     echo "<td bgcolor ='peachpuff'>";
     echo ($key+1);
