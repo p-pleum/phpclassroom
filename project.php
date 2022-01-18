@@ -1,6 +1,6 @@
-<?php
+<?php 
   $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-all");
-  $data = json_decode($json); 
+  $data = json_decode($json);
 ?>
 <!doctype html>
 <html lang="en">
@@ -56,8 +56,8 @@
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">จัดทำโดย</h5>
-              <p class="card-text">นายยิ่งคุณ รอดทิม </p>
-              <p class="card-text"><small class="text-muted">ม.6/13 เลขที่ 0 , 88888</small></p>
+              <p class="card-text">นางสาวปวริศา สีตะระโส </p>
+              <p class="card-text"><small class="text-muted">ม.6/13 เลขที่ 20 , 88888</small></p>
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@
     </div>
     <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
       <h1 class="display-7 fw-normal">รายงานข้อมูล Covid-19 รายวัน</h1>
-      <p class="fs-5 text-muted">ข้อมูล ณ วันที่ xx เดือน xxxx ปี 2565</p>
+      <p class="fs-5 text-muted">ข้อมูล ณ <?php echo $data[0]->txn_date; ?></p>
     </div>
   </header>
   <!-- แก้ไขส่วนที่ 2 -->
@@ -77,7 +77,7 @@
             <h4 class="my-0 fw-normal">ผู้ป่วยใหม่</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">xxx<small class="text-muted fw-light"> คน</small></h1>
+            <h1 class="card-title pricing-card-title"><?php echo $data[0]->new_case; ?><small class="text-muted fw-light"> คน</small></h1>
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@
             <h4 class="my-0 fw-normal">หายป่วยกลับบ้าน</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">xxx<small class="text-muted fw-light"> คน</small></h1>
+            <h1 class="card-title pricing-card-title"><?php echo $data[0]->new_recovered; ?><small class="text-muted fw-light"> คน</small></h1>
           </div>
         </div>
       </div>
@@ -97,7 +97,7 @@
             <h4 class="my-0 fw-normal">ผู้ป่วยสะสม</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">xxx<small class="text-muted fw-light"> คน</small></h1>
+            <h1 class="card-title pricing-card-title"><?php echo $data[0]->total_case; ?><small class="text-muted fw-light"> คน</small></h1>
           </div>
         </div>
       </div>
@@ -107,7 +107,7 @@
             <h4 class="my-0 fw-normal">เสียชีวิต</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">xxx<small class="text-muted fw-light"> คน</small></h1>
+            <h1 class="card-title pricing-card-title"><?php echo $data[0]->new_death; ?><small class="text-muted fw-light"> คน</small></h1>
           </div>
         </div>
       </div>
@@ -134,36 +134,37 @@
           </tr>
           <!-- แก้ไขส่วนที่ 3 -->
           <!-- Loop -->
-          <tr>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-          </tr>
-          <tr>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-          </tr>
-          <tr>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-          </tr>
+          <?php   foreach($data as $key=>$val){
+     echo "<tr>";
+    echo "<td bgcolor ='peachpuff'>";
+    echo ($key+1);
+    echo "</td>";
+    echo "<td>";
+    echo $val->province;
+    echo "</td>";
+echo "<td>";
+    echo $val->new_case;
+    echo "</td>";
+    echo "<td>";
+    echo $val->new_recovered;
+    echo "</td>";
+    echo "<td>";
+    echo $val->total_case_excludeabroad;
+    echo "</td>";
+    echo "<td>";
+    echo $val->new_death;
+    echo "</td>";
+    echo "<td>";
+   
+    echo "</tr>";
+  }
+  echo "<center></table><br>"; 
+          ?>
         </table>
       </div>
     </div>
 
   </footer>
-  <!-- แก้ไขส่วนที่ 4 -->
 </div>
 
 
