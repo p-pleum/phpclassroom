@@ -51,7 +51,7 @@
       <div class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="/AB4868FA-5169-4774-8B7E-67932FF66346.jpeg" class="img-fluid rounded-start" alt="...">
+            <img src="/E12E0125-A083-46C7-B5F2-9462ECFD91E6.jpeg" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
