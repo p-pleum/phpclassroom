@@ -134,7 +134,8 @@
           </tr>
           <!-- แก้ไขส่วนที่ 3 -->
           <!-- Loop -->
-          <?php   
+          
+  <?php   
           foreach($data as $key=>$val){
      echo "<tr>";
     echo "<td bgcolor ='peachpuff'>";
@@ -159,8 +160,6 @@ echo "<td>";
    
     echo "</tr>";
   }
-  echo "<center></table><br>"; 
-          }
           ?>
         </table>
       </div>
