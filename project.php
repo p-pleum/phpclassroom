@@ -160,6 +160,7 @@ echo "<td>";
     echo "</tr>";
   }
   echo "<center></table><br>"; 
+          }
           ?>
         </table>
       </div>
