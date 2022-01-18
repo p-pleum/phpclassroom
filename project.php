@@ -128,7 +128,7 @@
             <th>#</th>
             <th>จังหวัด</th>
             <th>ผู้ป่วยใหม่</th>
-            <th>หายป่วยกลับบ้าน</th>
+            <th>ผู้เสียชีวิตใหม่</th>
             <th>ผู้ป่วยสะสม</th>
             <th>เสียชีวิต</th>
           </tr>
@@ -150,7 +150,7 @@ echo "<td>";
     echo $val->new_case;
     echo "</td>";
     echo "<td>";
-    echo $val->new_case_excludeabroad;
+    echo $val->total_death;
     echo "</td>";
     echo "<td>";
     echo $val->total_case_excludeabroad;
